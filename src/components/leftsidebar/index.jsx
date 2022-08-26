@@ -1,30 +1,29 @@
 import { SideBox, SideContainer } from "../Box/styled";
-
 const LeftSideBar = () => {
   const tabmenu = [
     {
       id: "홈",
-      icon: "../../assets/icon/home.svg",
+      icon: `icon/film.svg`,
       link: "/",
     },
     {
       id: "탐색하기",
-      icon: "../../assets/icon/search.svg",
+      icon: "icon/zoom-in.svg",
       link: "/search",
     },
     {
       id: "커뮤니티",
-      icon: "../../assets/icon/community.svg",
+      icon: "icon/globe.svg",
       link: "/community",
     },
     {
       id: "컨택하기",
-      icon: "../../assets/icon/contact.svg",
+      icon: "icon/crosshair.svg",
       link: "/contact",
     },
     {
       id: "마이페이지",
-      icon: "../../assets/icon/mypage.svg",
+      icon: "icon/home.svg",
       link: "/mypage",
     },
   ];
@@ -33,7 +32,18 @@ const LeftSideBar = () => {
     <SideContainer id="left">
       <SideBox id="left">
         {tabmenu.map((v) => {
-          return <div>{v.id}</div>;
+          return (
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                padding: "10px 0px",
+              }}
+            >
+              <img src={v.icon} style={{ paddingRight: "18px" }} />
+              {v.id}
+            </div>
+          );
         })}
       </SideBox>
     </SideContainer>

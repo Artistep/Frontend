@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const SideContainer = styled.div`
   width: 290px;
+
   &#left {
     margin-right: auto;
   }
@@ -13,5 +14,5 @@ export const SideContainer = styled.div`
 export const SideBox = styled.div`
   background-color: #fff;
   border-radius: 20px;
-  padding-left: 36px;
+  padding: 16px 36px;
 `;
