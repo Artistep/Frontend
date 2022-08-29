@@ -3,16 +3,18 @@ import Nav from "./components/navbar";
 import Main from "./pages/main";
 import LeftSideBar from "./components/leftsidebar";
 import RightSideBar from "./components/rightsidebar";
+import GlobalStyle from "./GlobalStyle";
 
 function App() {
   return (
     <BrowserRouter>
+      <GlobalStyle />
       <Nav />
       <div
         style={{
           display: "flex",
           justifyContent: "center",
-          backgroundColor: "#C8C8C8",
+          backgroundColor: "#F6F6F6",
           height: "100vh",
         }}
       >

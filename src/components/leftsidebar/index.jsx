@@ -1,4 +1,4 @@
-import { SideBox, SideContainer } from "../Box/styled";
+import { SideBox, SideContainer, SideElement } from "../Box/styled";
 const LeftSideBar = () => {
   const tabmenu = [
     {
@@ -33,16 +33,10 @@ const LeftSideBar = () => {
       <SideBox id="left">
         {tabmenu.map((v) => {
           return (
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                padding: "10px 0px",
-              }}
-            >
-              <img src={v.icon} style={{ paddingRight: "18px" }} />
+            <SideElement key={v.id}>
+              <img src={v.icon} alt={v.id} style={{ paddingRight: "18px" }} />
               {v.id}
-            </div>
+            </SideElement>
           );
         })}
       </SideBox>
