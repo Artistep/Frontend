@@ -13,6 +13,7 @@ function App() {
       <div
         style={{
           display: "flex",
+          paddingTop: "70px",
           justifyContent: "center",
           backgroundColor: "#F6F6F6",
           height: "100vh",

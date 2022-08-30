@@ -4,14 +4,16 @@ const Nav = () => {
   return (
     <div
       style={{
-        display: "flex",
+        position: "fixed",
+        width: "100%",
         backgroundColor: "#000",
-        justifyContent: "center",
         color: "#fff",
         padding: "10px",
       }}
     >
-      <img src={Logo} alt="Logo" />
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <img src={Logo} alt="Logo" />
+      </div>
     </div>
   );
 };
