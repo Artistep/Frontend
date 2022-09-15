@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Nav from "./components/navbar";
 import Main from "./pages/main";
+import Login from "./pages/login";
 import LeftSideBar from "./components/leftsidebar";
 import RightSideBar from "./components/rightsidebar";
 import GlobalStyle from "./GlobalStyle";
@@ -30,6 +31,7 @@ function App() {
           <LeftSideBar />
           <Routes>
             <Route path="/" element={<Main />} />
+            <Route path="/login" element={<Login />} />
           </Routes>
           <RightSideBar />
         </div>
