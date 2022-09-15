@@ -38,3 +38,11 @@ export const FindBox = styled.div`
   border-radius: 20px;
   margin-bottom: 50px;
 `;
+
+export const FeedBox = styled.div`
+width: 594px;
+height: 100px;
+text-align: center;
+background: #000000;
+border-radius: 20px;
+`
