@@ -29,3 +29,12 @@ export const SideElement = styled.div`
     font-family: "NotoSansKR-Bold";
   }
 `;
+
+export const FindBox = styled.div`
+  width: 392px;
+  height: 132px;
+  background: #ffffff;
+  border: 2px solid #f6f6f6;
+  border-radius: 20px;
+  margin-bottom: 50px;
+`;

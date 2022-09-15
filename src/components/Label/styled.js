@@ -22,3 +22,18 @@ letter-spacing: -0.01em;
 padding: 10px;
 color: #3B3B3B;
 `
+
+export const BigText = styled.h1`
+
+font-family: 'Noto Sans KR';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+margin: 50px;
+text-align: center;
+letter-spacing: -0.02em;
+
+color: #000000;
+`

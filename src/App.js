@@ -7,6 +7,7 @@ import RightSideBar from "./components/rightsidebar";
 import GlobalStyle from "./GlobalStyle";
 import Register from "./pages/register";
 import Next from "./pages/register/next";
+import Idfind from "./pages/find/idfind";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/next" element={<Next />} />
+            <Route path="/idfind" element={<Idfind />} />
           </Routes>
           <RightSideBar />
         </div>
