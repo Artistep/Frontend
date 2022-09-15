@@ -5,6 +5,8 @@ import Login from "./pages/login";
 import LeftSideBar from "./components/leftsidebar";
 import RightSideBar from "./components/rightsidebar";
 import GlobalStyle from "./GlobalStyle";
+import Register from "./pages/register";
+import Next from "./pages/register/next";
 
 function App() {
   return (
@@ -32,6 +34,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Main />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/next" element={<Next />} />
           </Routes>
           <RightSideBar />
         </div>

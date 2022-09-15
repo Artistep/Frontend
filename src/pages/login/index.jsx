@@ -5,7 +5,7 @@ import { SmallLabel, BigLabel } from "../../components/Label/styled";
 
 const Login = () => {
   return (
-    <div style={{ width: "100%", display: "block", textAlign: "center" }}>
+    <div style={{ width: "100%", display: "block"}}>
       <div style={{ width: "50%", margin: "0 auto" }}>
         <LoginInput placeholder="활동 아이디 또는 이메일" />
         <LoginInput placeholder="비밀번호" />
@@ -29,7 +29,7 @@ const Login = () => {
         <LoginButton>로그인</LoginButton>
 
         <div style={{marginTop:"150px", display:"grid"}}>
-            <SmallLabel>
+            <SmallLabel style={{textAlign:"center"}}>
                 아직도 회원이 아닌가요?
             </SmallLabel>
             <BigLabel>
