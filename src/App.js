@@ -8,6 +8,7 @@ import GlobalStyle from "./GlobalStyle";
 import Register from "./pages/register";
 import Next from "./pages/register/next";
 import Idfind from "./pages/find/idfind";
+import Pwfind from "./pages/find/pwfind";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
             <Route path="/register" element={<Register />} />
             <Route path="/next" element={<Next />} />
             <Route path="/idfind" element={<Idfind />} />
+            <Route path="/pwfind" element={<Pwfind />} />
           </Routes>
           <RightSideBar />
         </div>
