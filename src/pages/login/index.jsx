@@ -5,7 +5,7 @@ import { SmallLabel, BigLabel } from "../../components/Label/styled";
 
 const Login = () => {
   return (
-    <div style={{ width: "100%", display: "block"}}>
+    <div style={{ width: "100%", display: "block", marginTop: "200px"}}>
       <div style={{ width: "50%", margin: "0 auto" }}>
         <LoginInput placeholder="활동 아이디 또는 이메일" />
         <LoginInput placeholder="비밀번호" />

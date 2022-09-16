@@ -6,10 +6,11 @@ import {
   HeaderBtext,
   HeaderStext,
 } from "../Box/styled";
-import { BigText } from "../Label/styled";
+import {Outlet} from "react-router"
 
 const RightSideBar = () => {
   return (
+    <>
     <SideContainer id="right">
       <SideBox id="title">내 계정</SideBox>
       <HeaderBox>
@@ -32,6 +33,7 @@ const RightSideBar = () => {
         </div>
       </div>
     </SideContainer>
+    </>
   );
 };
 

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const LoginButton = styled.button`
-  width: 392px;
+  width: 100%;
   height: 60px;
   background: #000000;
   border-radius: 20px;

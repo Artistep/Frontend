@@ -5,7 +5,7 @@ import Box from "../../components/Box";
 
 const Main = () => {
   return (
-    <div>
+    <div style={{width: "50%"}}>
       <FeedBox>
         <img />
         <FeedText>반가워요 홍길동님 오늘의 피드를 확인해보세요</FeedText>

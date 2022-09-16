@@ -1,4 +1,7 @@
 import { SideBox, SideContainer, SideElement } from "../Box/styled";
+import { Outlet } from "react-router";
+import RightSideBar from "../rightsidebar";
+
 const LeftSideBar = () => {
   const tabmenu = [
     {
@@ -29,18 +32,22 @@ const LeftSideBar = () => {
   ];
 
   return (
-    <SideContainer id="left">
-      <SideBox id="left">
-        {tabmenu.map((v) => {
-          return (
-            <SideElement key={v.id}>
-              <img src={v.icon} alt={v.id} style={{ paddingRight: "18px" }} />
-              {v.id}
-            </SideElement>
-          );
-        })}
-      </SideBox>
-    </SideContainer>
+    <>
+      <SideContainer id="left">
+        <SideBox id="left">
+          {tabmenu.map((v) => {
+            return (
+              <SideElement key={v.id}>
+                <img src={v.icon} alt={v.id} style={{ paddingRight: "18px" }} />
+                {v.id}
+              </SideElement>
+            );
+          })}
+        </SideBox>
+      </SideContainer>
+      <Outlet />
+      <RightSideBar />
+    </>
   );
 };
 

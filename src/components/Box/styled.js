@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const SideContainer = styled.div`
-  width: 290px;
+  width: 20%;
   font-family: "NotoSansKR-Regular";
   &#left {
     margin-right: auto;
@@ -31,7 +31,7 @@ export const SideElement = styled.div`
 `;
 
 export const FindBox = styled.div`
-  width: 392px;
+  width: 100%;
   height: 132px;
   background: #ffffff;
   border: 2px solid #f6f6f6;
@@ -40,7 +40,7 @@ export const FindBox = styled.div`
 `;
 
 export const FeedBox = styled.div`
-  width: 594px;
+  width: 100%;
   height: 100px;
   text-align: center;
   background: #000000;
@@ -52,6 +52,7 @@ export const HeaderBox = styled.div`
   border-radius: 10px 10px 0px 0px;
   padding: 20px;
   display: flex;
+  width: 100%;
 `;
 
 export const Circle = styled.div`

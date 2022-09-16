@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const LoginInput = styled.input`
-  width: 392px;
+  width: 100%;
   height: 60px;
   background: #ffffff;
   border: 2px solid #f6f6f6;

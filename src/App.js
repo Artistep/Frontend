@@ -32,16 +32,16 @@ function App() {
             width: "1200px",
           }}
         >
-          <LeftSideBar />
           <Routes>
-            <Route path="/" element={<Main />} />
+            <Route element={<LeftSideBar />}>
+              <Route path="/" element={<Main />} />
+            </Route>
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/next" element={<Next />} />
             <Route path="/idfind" element={<Idfind />} />
             <Route path="/pwfind" element={<Pwfind />} />
           </Routes>
-          <RightSideBar />
         </div>
       </div>
     </BrowserRouter>

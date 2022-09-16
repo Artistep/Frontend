@@ -4,8 +4,8 @@ import { LoginButton } from "../../components/button/styled";
 
 const Register = () => {
   return (
-    <div style={{ width: "100%", display: "block"}}>
-      <div style={{ width: "50%", margin: "0 auto" }}>
+    <div style={{ width: "100%", display: "block", marginTop: "200px"}}>
+      <div style={{ width: "40%", margin: "0 auto" }}>
         <LoginInput placeholder="성명" />
         <LoginInput placeholder="전화번호" />
         <LoginInput placeholder="인증번호" />
