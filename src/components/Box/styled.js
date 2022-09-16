@@ -89,6 +89,14 @@ export const Container = styled.div`
   border-radius: 0px;
 `;
 
+export const SmallCon = styled.div`
+  width: 100%;
+  height: 100px;
+
+  background: #b6b6b6;
+  border-radius: 0px;
+`;
+
 export const Footer = styled.div`
   padding: 20px;
   background: #ffffff;

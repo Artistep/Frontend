@@ -12,7 +12,7 @@ const Main = () => {
         <SmallLabel>다양한 아티스트와 함께 스텝을 맞춰 걸어요 </SmallLabel>
       </FeedBox>
 
-      <Box />
+      <Box props={'main'}/>
     </div>
   );
 };

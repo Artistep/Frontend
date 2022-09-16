@@ -9,6 +9,7 @@ import Register from "./pages/register";
 import Next from "./pages/register/next";
 import Idfind from "./pages/find/idfind";
 import Pwfind from "./pages/find/pwfind";
+import Detail from "./pages/detail";
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
             <Route path="/next" element={<Next />} />
             <Route path="/idfind" element={<Idfind />} />
             <Route path="/pwfind" element={<Pwfind />} />
+            <Route path="/detail" element={<Detail />} />
           </Routes>
         </div>
       </div>
