@@ -6,7 +6,16 @@ import {
   MyStext,
   MyBox,
   Ftext,
+  SideBox,
+  SideContainer,
+  SideElement,
+  MyRec,
+  HeaderBox,
+  Circle,
+  HeaderBtext,
+  HeaderStext
 } from "../../components/Box/styled";
+import RightSideBar from "../../components/rightsidebar";
 
 const Mypage = () => {
   return (
@@ -20,7 +29,7 @@ const Mypage = () => {
               <MyStext>홍길동님의 레벨은 현재 1레벨입니다.</MyStext>
             </div>
 
-            <div style={{marginTop: "20px"}}>
+            <div style={{ marginTop: "20px" }}>
               <MyBtext>활동명</MyBtext>
               <MyStext>@Working_name</MyStext>
             </div>
@@ -53,8 +62,108 @@ const Mypage = () => {
           </div>
         </div>
       </Mycon>
+
+      <div
+        style={{
+          display: "flex",
+          paddingTop: "70px",
+          justifyContent: "center",
+          backgroundColor: "#F6F6F6",
+          height: "100vh",
+        }}
+      >
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            margin: "10px 200px 0px 200px",
+            width: "100%",
+          }}
+        >
+          {Left()}
+        </div>
+      </div>
     </div>
   );
 };
 
 export default Mypage;
+
+const Left = () => {
+  const tabmenu = [
+    {
+      id: "홈",
+      icon: `icon/film.svg`,
+      link: "/",
+    },
+    {
+      id: "탐색하기",
+      icon: "icon/zoom-in.svg",
+      link: "/search",
+    },
+    {
+      id: "커뮤니티",
+      icon: "icon/globe.svg",
+      link: "/community",
+    },
+    {
+      id: "컨택하기",
+      icon: "icon/crosshair.svg",
+      link: "/contact",
+    },
+    {
+      id: "마이페이지",
+      icon: "icon/home.svg",
+      link: "/mypage",
+    },
+  ];
+
+  const box = [1, 2];
+
+  return (
+    <>
+      <SideContainer id="left">
+        <SideBox id="left">
+          {tabmenu.map((v) => {
+            return (
+              <SideElement key={v.id}>
+                <img src={v.icon} alt={v.id} style={{ paddingRight: "18px" }} />
+                {v.id}
+              </SideElement>
+            );
+          })}
+        </SideBox>
+      </SideContainer>
+      <div style={{ width: "100%", margin: "0 auto"}}>
+        {box.map((i) => (
+          <div
+            style={{
+              display: "flex",
+              width: "100%",
+              marginBottom: "50px",
+              justifyContent: "space-evenly",
+            }}
+          >
+            <MyRec></MyRec>
+            <MyRec></MyRec>
+          </div>
+        ))}
+
+        <div style={{ width: "100%", marginTop: "20px" }}>
+          <div style={{ marginBottom: "10px" }}>회원님을 위한 컨택 추천</div>
+          <div>
+            <HeaderBox>
+              <Circle></Circle>
+              <div>
+                <HeaderBtext>활동명</HeaderBtext>
+                <HeaderStext>@WORKING_NAME</HeaderStext>
+              </div>
+            </HeaderBox>
+          </div>
+        </div>
+      </div>
+
+      <RightSideBar />
+    </>
+  );
+};

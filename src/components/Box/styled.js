@@ -132,7 +132,7 @@ export const BigCir = styled.div`
   background: #b6b6b6;
   border-radius: 100px;
   margin-right: 10px;
-  align-self: center
+  align-self: center;
 `;
 
 export const MyBtext = styled.div`
@@ -179,9 +179,16 @@ export const MyBox = styled.div`
 `;
 
 export const Ftext = styled.div`
-font-family: 'Noto Sans KR';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 23px;
-`
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+`;
+
+export const MyRec = styled.div`
+  width: 291px;
+  height: 291px;
+  background: #d9d9d9;
+  border-radius: 10px;
+`;
