@@ -116,3 +116,72 @@ export const FooterItem = styled.div`
   border-radius: 40px;
   margin-right: 10px;
 `;
+
+export const Mycon = styled.div`
+  width: 100%;
+  padding: 100px 0px 50px 0px;
+  justify-content: center;
+  display: flex;
+  background: #000000;
+  border-radius: 0px 0px 0px 30px;
+`;
+
+export const BigCir = styled.div`
+  width: 210px;
+  height: 210px;
+  background: #b6b6b6;
+  border-radius: 100px;
+  margin-right: 10px;
+  align-self: center
+`;
+
+export const MyBtext = styled.div`
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 38px;
+  color: #ffffff;
+`;
+export const MyStext = styled.div`
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+
+  color: #b6b6b6;
+`;
+
+export const MyBox = styled.div`
+  justify-content: center;
+  align-items: center;
+  padding: 9px 24px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin: 5px;
+  width: 87px;
+  height: 24px;
+
+  background: #3b3b3b;
+  border-radius: 24px;
+
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  /* identical to box height, or 157% */
+
+  letter-spacing: -0.02em;
+  font-feature-settings: "calt" off;
+`;
+
+export const Ftext = styled.div`
+font-family: 'Noto Sans KR';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 23px;
+`

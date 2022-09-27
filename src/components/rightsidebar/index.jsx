@@ -6,14 +6,17 @@ import {
   HeaderBtext,
   HeaderStext,
 } from "../Box/styled";
-import {Outlet} from "react-router"
+import { useNavigate } from "react-router-dom";
+
 
 const RightSideBar = () => {
+
+  let navigate  = useNavigate();
   return (
     <>
     <SideContainer id="right">
       <SideBox id="title">내 계정</SideBox>
-      <HeaderBox>
+      <HeaderBox onClick={() => navigate("/mypage")}>
         <Circle></Circle>
         <div>
           <HeaderBtext>활동명</HeaderBtext>
