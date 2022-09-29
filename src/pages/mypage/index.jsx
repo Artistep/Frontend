@@ -13,7 +13,7 @@ import {
   HeaderBox,
   Circle,
   HeaderBtext,
-  HeaderStext
+  HeaderStext,
 } from "../../components/Box/styled";
 import RightSideBar from "../../components/rightsidebar";
 
@@ -134,14 +134,14 @@ const Left = () => {
           })}
         </SideBox>
       </SideContainer>
-      <div style={{ width: "100%", margin: "0 auto"}}>
+      <div style={{ width: "50%", margin: "0 auto" }}>
         {box.map((i) => (
           <div
             style={{
               display: "flex",
               width: "100%",
               marginBottom: "50px",
-              justifyContent: "space-evenly",
+              justifyContent: "space-between",
             }}
           >
             <MyRec></MyRec>
@@ -149,8 +149,11 @@ const Left = () => {
           </div>
         ))}
 
-        <div style={{ width: "100%", marginTop: "20px" }}>
-          <div style={{ marginBottom: "10px" }}>회원님을 위한 컨택 추천</div>
+        <div style={{ width: "100%", margin: "0 auto", marginTop: "20px" }}>
+          <div style={{ display: "flex", justifyContent:"space-between", marginBottom: "30px" }}>
+            <div>회원님을 위한 컨택 추천</div>
+            <div>view more</div>
+          </div>
           <div>
             <HeaderBox>
               <Circle></Circle>

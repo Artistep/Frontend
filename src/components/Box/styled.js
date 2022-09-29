@@ -187,7 +187,7 @@ export const Ftext = styled.div`
 `;
 
 export const MyRec = styled.div`
-  width: 291px;
+  width: 45%;
   height: 291px;
   background: #d9d9d9;
   border-radius: 10px;
