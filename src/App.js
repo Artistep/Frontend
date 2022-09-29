@@ -10,6 +10,7 @@ import Idfind from "./pages/find/idfind";
 import Pwfind from "./pages/find/pwfind";
 import Detail from "./pages/detail";
 import Mypage from "./pages/mypage";
+import Follower from "./pages/mypage/Follower";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Nav />
       <Routes>
         <Route path="/mypage" element={<Mypage />} />
+        <Route path="/follower" element={<Follower />} />
       </Routes>
       <div
         style={{
