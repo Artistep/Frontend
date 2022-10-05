@@ -11,6 +11,7 @@ import Pwfind from "./pages/find/pwfind";
 import Detail from "./pages/detail";
 import Mypage from "./pages/mypage";
 import Follower from "./pages/mypage/Follower";
+import Search from "./pages/search";
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
           <Routes>
             <Route element={<LeftSideBar />}>
               <Route path="/" element={<Main />} />
+              <Route path="/search" element={<Search />} />
             </Route>
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
