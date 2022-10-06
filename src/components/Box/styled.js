@@ -18,6 +18,9 @@ export const SideBox = styled.div`
   &#title {
     font-family: "NotoSansKR-Bold";
   }
+  &#right {
+    background-color: rgb(246, 246, 246)
+  }
 `;
 
 export const SideElement = styled.div`
@@ -192,3 +195,16 @@ export const MyRec = styled.div`
   background: #d9d9d9;
   border-radius: 10px;
 `;
+
+
+export const SearchBox = styled.div`
+border: 1px solid #fff;
+background: #FFFFFF;
+border-radius: 20px;
+width: 48%;
+height: 102px;
+text-align: center;
+align-items: center;
+justify-content: center;
+display: flex;
+`

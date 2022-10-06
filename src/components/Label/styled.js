@@ -47,3 +47,21 @@ line-height: 30px;
 
 color: #ffffff;
 `
+
+export const SearchHtext = styled.div`
+font-family: 'Noto Sans KR';
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 32px;
+`
+
+export const SearchStext = styled.div`
+font-family: 'Noto Sans KR';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 23px;
+
+color: #3B3B3B;
+`

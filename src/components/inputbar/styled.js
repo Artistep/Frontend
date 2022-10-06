@@ -14,3 +14,20 @@ export const LoginInput = styled.input`
   line-height: 26px;
   margin-bottom: 12px;
 `;
+
+
+export const SearchInput = styled.input`
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 9px 24px;
+gap: 10px;
+height: 52px;
+margin-top: 20px;
+text-align: center;
+border: 1px solid #fff;
+
+background: #FFFFFF;
+border-radius: 24px;
+`
